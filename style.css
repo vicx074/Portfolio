@@ -401,7 +401,7 @@ form button, form input[type=submit]{
 form button:disabled{
 
     cursor: not-allowed;
-    background-color: #7d7d7d;
+    background-color: #000000;
 
 }
 
