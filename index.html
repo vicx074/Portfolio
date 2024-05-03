@@ -18,6 +18,7 @@
 
 
     <script src="menu.js" defer></script>
+    <script src="form.js" defer></script>
     <title>Portfólio Victor Eduardo</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
         <div class="interface">
           <div class="logo">
             <a href="#">
-                <img src="images/logogenerica130px.png" alt="Logo Victor Eduardo">
+                <h1>victor <span>.dev</span></h1>
             </a>
           </div>
           <nav class="menu-desktop">
@@ -184,17 +185,20 @@
                 <h2 class="titulo"> FALE <span>COMIGO.</span></h2>
                 <p>Gostaria de entrar em contato diretamente comigo? Preencha o formulário abaixo e deixe sua mensagem!<br> Estou ansioso para ouvir de você e colaborar em projetos interessantes juntos.</p>
 
-                <form method="post" action="envia.php">
-                   <input type="text" name="nome" placeholder="Seu nome completo:" required>
-                   <input type="text" name="email" placeholder="Seu e-mail:" required>
-                   <input type="text" name="celular" placeholder="Seu celular:">
-                   <textarea name="mensagem" id=""placeholder="Sua Mensagem" required></textarea>
-                   <div class="btn-enviar">
-                    <input type="submit" value="ENVIAR">
-                   </div>
-                    
-                    
-                </form>
+                <form
+      action="https://formsubmit.co/ajax/victororg22@gmail.com"
+      method="POST"
+      data-form
+    >
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="E-mail" required />
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"  required></textarea>
+      <div class="btn-enviarf"><button type="submit" data-button>Enviar</button></div>
+      
+    </form>
              </div><!--Interface-->
         </section><!--selection-->
     </main>

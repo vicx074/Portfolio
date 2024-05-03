@@ -66,6 +66,9 @@ header nav.menu-desktop a:hover{
     color: white;
     transform: scale(1.05);
 }
+.interface .logo span{
+    color: #35f335;
+}
 
 header nav ul{
     list-style-type: none;
@@ -228,15 +231,17 @@ section .especialidades{
 }
 .sobre .img-sobre{
     display: flex;
-    margin-top: 180px;
+    margin-top: 160px;
     transition: .2s;
-    padding: 20px;
+    padding: 10px;
+    margin-left: 20px;
     
+    
+
     
 }
 .sobre .img-sobre:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(4, 201, 236, 0.938);
     border-radius: 20px;
 }
 
@@ -247,6 +252,7 @@ section.sobre .flex{
 
 .sobre .txt-sobre{
     color: white;
+    
 
 }
 
@@ -353,7 +359,7 @@ form{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     margin-top: 40px;
 }
 
@@ -373,18 +379,45 @@ form textarea{
     height: 200px;
     
 }
-form .btn-enviar{
-    margin-top: 20px;
+
+.btn-enviarf{
     text-align: center;
+    gap: 60px;
+    
 }
-form .btn-enviar input[type=submit]{
- width: 120px;
- background-color: #35f335;
- color: #000;
- font-weight: 500;
- cursor: pointer;
- transition: .2s;
+
+form button, form input[type=submit]{
+    width: 100%;
+    background-color: #35f335;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 20px;
+    font-size: inherit;
+    padding: 1.25rem;
   }
+
+form button:disabled{
+
+    cursor: not-allowed;
+    background-color: #7d7d7d;
+
+}
+
+.success,
+.error {
+  text-align: center;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}
+
   .formulario .interface p{
     color: white;
     text-align: center;
