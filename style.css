@@ -365,7 +365,7 @@ form{
 
 form input, form textarea{
     width: 100%;
-    background-color: #2e2e2e79;
+    background-color: rgba(56, 56, 56, 0.475);
     border: none;
     outline: 0;
     padding: 20px 15px;
@@ -377,7 +377,7 @@ form input, form textarea{
 form textarea{
     resize: none;
     height: 200px;
-    
+    color: #7d7d7d;
 }
 
 .btn-enviarf{
@@ -389,7 +389,7 @@ form textarea{
 form button, form input[type=submit]{
     width: 100%;
     background-color: #35f335;
-    color: #000;
+    color: #000000;
     font-weight: 500;
     cursor: pointer;
     transition: .2s;
@@ -401,7 +401,7 @@ form button, form input[type=submit]{
 form button:disabled{
 
     cursor: not-allowed;
-    background-color: #000000;
+    
 
 }
 
